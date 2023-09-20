@@ -137,6 +137,9 @@ if uploaded_file is not None:
     
     im = Image.open(uploaded_file).convert('L')
     st.image(im)
+    w,h= im.size
+    r = h/w
+    im = im.resize((int(800),int(800*r)))
     fig, axs = plt.subplots()
     axs.imshow(im)
     im = np.array(im)
