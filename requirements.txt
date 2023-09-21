@@ -3,4 +3,5 @@ numpy
 Pillow
 scipy
 streamlit
+streamlit_image_select
 
