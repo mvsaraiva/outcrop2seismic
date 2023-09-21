@@ -106,7 +106,7 @@ lam = velocidade/f
 a = velocidade/(f*2*np.pi)
 r2d = ricker(a, size)
 
-on_off_w = st.toggle('Plota wavelet', value=True)
+on_off_w = st.toggle('Plota wavelet', value=False)
 if on_off_w:
     fig, axs = plt.subplots()
     axs.plot(t,r2d[:,size//2])
@@ -114,13 +114,13 @@ if on_off_w:
     # plt.ylim(-0.08,0.25)
     st.pyplot(fig)
 
-#st.write("Numero de onda da wavelet em profundidade (m): ", lam)
+#st.write("Comprimento de onda da wavelet em profundidade (m): ", lam)
  #create the psf
 st.write('Criando a psf')
 aperture = st.slider('Angulo de iluminação: ', 0, 89, 30)
 angle = st.slider('Angulo de incidência: ', -89, 89, 0)
 
-on_off = st.toggle('Mostra máscasra e wavelet no domínio da frequência', value=True)
+on_off = st.toggle('Mostra máscasra e wavelet no domínio da frequência', value=False)
                 
 
 psf, mask = create_psf(size, a, aperture, angle, amp=1,  mask_on = True, print_on = on_off, smooth_mask = False,sigma=0.5)
