@@ -96,10 +96,10 @@ def make_rc(imp):
     return (lower - upper) / (lower + upper)
 
 
-size = st.slider('Tamanho da wavelet (m): ', 32, 128, 64)
+size = 64 #st.slider('Tamanho da wavelet (m): ', 32, 128, 64)
 f = st.slider('Frequência da wavelet ricker (hz): ', 15, 120, 50)
 dt = 4 #st.slider('Amostragem em tempo (ms): ', 1, 8, 4)
-velocidade = st.slider('Velocidade (m/s): ', 1500, 6500, 2000)
+velocidade = st.slider('Velocidade média (m/s): ', 1500, 3500, 2000)
 
 t = np.arange(-size*2, size*2, dt)
 lam = velocidade/f
