@@ -71,11 +71,11 @@ def create_psf(size, a, aperture, angle, amp=1,  mask_on = True, print_on = Fals
         axs[0,0].imshow(mask, cmap = 'gray')
         axs[0,0].set_title('Iluminação')
         axs[0,1].imshow(wavelet_2D)
-        axs[0,1].set_title('Profundidade iluminação total ')
+        axs[0,1].set_title('Prof. iluminação total ')
         axs[1,0].imshow(np.abs(wavelet_2D_f))
-        axs[1,0].set_title('Número de onda iluminação total')
+        axs[1,0].set_title('Nº onda iluminação total')
         axs[1,1].imshow(np.abs(wavelet_2D_f_masked))
-        axs[1,1].set_title('Número de onda iluminação restrita')
+        axs[1,1].set_title('Nº onda iluminação restrita')
         st.pyplot(fig)
 
     #go back to the time domain
