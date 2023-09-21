@@ -127,8 +127,8 @@ psf, mask = create_psf(size, a, aperture, angle, amp=1,  mask_on = True, print_o
 
 fig, axs = plt.subplots()
 axs.imshow(psf, cmap='gray_r')
-axs[0].set_title('PSF')
-axs[0].colorbar()
+axs.set_title('PSF')
+axs.colorbar()
 axs.set_axis_off()
 st.pyplot(fig)
 
