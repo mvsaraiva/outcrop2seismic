@@ -132,7 +132,7 @@ axs.set_axis_off()
 
 st.pyplot(fig)
 
-uploaded_file = st.file_uploader("Escolha o arrquivo com a foto do afloramento para criar uma sísmica sintética:")
+uploaded_file = st.file_uploader("Escolha o arrquivo com a foto do afloramento para criar uma sísmica sintética ou use o celular na horizontal para tirar uma foto:")
 if uploaded_file is not None:
     # To read file as bytes:
     
