@@ -120,7 +120,7 @@ st.write('Criando a psf')
 aperture = st.slider('Angulo de iluminação: ', 0, 89, 30)
 angle = st.slider('Angulo de incidência: ', -89, 89, 0)
 
-on_off = st.toggle('Mostra máscasra e wavelet no domínio da frequência', value=False)
+on_off = st.toggle('Mostra máscasra e wavelet', value=False)
                 
 
 psf, mask = create_psf(size, a, aperture, angle, amp=1,  mask_on = True, print_on = on_off, smooth_mask = False,sigma=0.5)
