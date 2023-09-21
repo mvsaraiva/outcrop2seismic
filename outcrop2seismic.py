@@ -128,8 +128,8 @@ psf, mask = create_psf(size, a, aperture, angle, amp=1,  mask_on = True, print_o
 fig, axs = plt.subplots()
 axs.imshow(psf, cmap='gray_r')
 axs.set_title('PSF')
-axs.colorbar()
 axs.set_axis_off()
+plt.colorbar()
 st.pyplot(fig)
 
 uploaded_file = st.file_uploader("Escolha o arrquivo com a foto do afloramento para criar uma sísmica sintética:")
