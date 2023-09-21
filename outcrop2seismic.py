@@ -129,7 +129,7 @@ fig, axs = plt.subplots()
 axs.imshow(psf, cmap='gray_r')
 axs.set_title('PSF')
 axs.set_axis_off()
-fig.colorbar()
+
 st.pyplot(fig)
 
 uploaded_file = st.file_uploader("Escolha o arrquivo com a foto do afloramento para criar uma sísmica sintética:")
