@@ -114,11 +114,11 @@ if on_off_w:
     # plt.ylim(-0.08,0.25)
     st.pyplot(fig)
 
-st.write("Numero de onda da wavelet em profundidade (m): ", lam)
+#st.write("Numero de onda da wavelet em profundidade (m): ", lam)
  #create the psf
 st.write('Criando a psf')
-aperture = st.slider('Angulo de iluminação: ', 0, 90, 30)
-angle = st.slider('Angulo de incidência: ', 0, 90, 0)
+aperture = st.slider('Angulo de iluminação: ', 0, 89, 30)
+angle = st.slider('Angulo de incidência: ', -89, 89, 0)
 
 on_off = st.toggle('Mostra máscasra e wavelet no domínio da frequência', value=True)
                 
